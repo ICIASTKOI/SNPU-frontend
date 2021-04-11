@@ -28,7 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/main/css/bootstrap.min.css",
+              "src/assets/main/css/lightbox.css",
+              "src/assets/main/css/font-awesome.css",
+              "src/assets/main/css/flex-slider.css",
+              "src/assets/main/css/owl-carousel.css",
+              "src/assets/main/css/templatemo-breezed.css"
             ],
             "scripts": []
           },
