@@ -562,5 +562,7 @@ License - nucleoapp.com/license/
     content: "\ea64";
 }
 
-
+.drop::before {
+    content: "./assets/img/one-page/drop";
+}
 /* all icon font classes list here */
