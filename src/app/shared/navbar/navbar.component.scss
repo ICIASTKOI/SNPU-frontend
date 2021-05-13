@@ -1,0 +1,10 @@
+.nav-item {
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  align-items: center;
+}
+button {
+    text-align: bottom;
+}
+i{
+    margin-bottom: 10px;
+}
