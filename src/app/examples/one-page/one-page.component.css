@@ -2,3 +2,45 @@
     display: flex;
     justify-content: center;
 }
+
+.misevi_logo{
+    flex-grow: 1;
+}
+.misevi_logo .img{
+}
+
+.misevi_section{
+    display: flex;
+}
+
+.misevi_desc{
+    text-align: center;
+    font-weight: bold;
+    color: ivory;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.misevi_desc h3{
+    text-align: center;
+}
+
+
+.text_bold{
+    font-weight: bold;
+    color: ivory;
+}
+
+.container_misevi{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (max-width:1300px) { 
+
+    .misevi_section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
