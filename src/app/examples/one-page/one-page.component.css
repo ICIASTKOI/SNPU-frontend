@@ -37,6 +37,10 @@
     margin-right: 5%;
 }
 
+.big-icon{
+    width: auto;
+}
+
 @media (max-width:1300px) { 
 
     .misevi_section{
