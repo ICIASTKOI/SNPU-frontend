@@ -7,6 +7,12 @@
     flex-grow: 1;
 }
 .misevi_logo .img{
+    max-width:100%;
+}
+
+
+.page-carousel img{
+    height: 450px;
 }
 
 .misevi_section{
@@ -41,6 +47,10 @@
     width: auto;
 }
 
+.description p{
+ font-weight: 500;
+ color:darkgrey;
+}
 @media (max-width:1300px) { 
 
     .misevi_section{
