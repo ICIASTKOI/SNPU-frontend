@@ -320,13 +320,13 @@
                     </div>
                 </div>
             </div>
-
+            <form (ngSubmit)="onSubmit(mailForm)" #mailForm="ngForm"  novalidate>
             <div class="section landing-section text-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 mr-auto ml-auto">
                             <h2 class="title">Napisz do nas!</h2>
-                            <form class="contact-form">
+                            <div class="contact-form">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>Imię</label>
@@ -336,7 +336,7 @@
                                                         class="nc-icon nc-single-02"></i></span>
                                             </div>
                                             <input type="text" class="form-control" placeholder="Imię"
-                                                (focus)="focus=true" (blur)="focus=false">
+                                            (focus)="focus=true" (blur)="focus=false" name="name" id="name" ngModel>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -347,21 +347,22 @@
                                                         class="nc-icon nc-email-85"></i></span>
                                             </div>
                                             <input type="text" class="form-control" placeholder="Email"
-                                                (focus)="focus1=true" (blur)="focus1=false">
+                                                (focus)="focus1=true" (blur)="focus1=false" name="email" id="email" ngModel>
                                         </div>
                                     </div>
                                 </div>
                                 <label>Wiadomość</label>
-                                <textarea class="form-control" rows="4"
-                                    placeholder="Napisz co tylko przychodzi Ci do głowy!"></textarea>
+                                <textarea  class="form-control" rows="4"
+                                    placeholder="Napisz co tylko przychodzi Ci do głowy!" name="message" id="message" ngModel></textarea>
                                 <div class="row">
                                     <div class="col-md-4 mr-auto ml-auto">
-                                        <button class="btn btn-danger btn-lg btn-fill">Wyślij!</button>
+                                        <button type="submit" class="btn btn-danger btn-lg btn-fill">Wyślij!</button>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </form>
         </div>
