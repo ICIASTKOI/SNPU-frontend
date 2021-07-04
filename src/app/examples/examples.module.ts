@@ -5,17 +5,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { OnePageComponent } from './one-page/one-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ToastrModule } from 'ngx-toastr';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
         NgbModule,
-        HttpClientModule,
-        ToastrModule.forRoot(),
-        BrowserAnimationsModule
+        HttpClientModule
     ],
     declarations: [
         OnePageComponent]
