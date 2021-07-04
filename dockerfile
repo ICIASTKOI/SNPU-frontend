@@ -12,3 +12,4 @@ COPY --from=build /app/dist/out/ /usr/share/nginx/html
 COPY  ssl/ca.crt  /etc/ssl/
 COPY  ssl/private.key /etc/ssl/
 COPY /nginx.conf /etc/nginx/conf.d/default.conf
+# docker run --name example-version -d -p 80:80 -p 443:443  hubertvistula/snpu.frontend:v10
