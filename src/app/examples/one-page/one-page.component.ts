@@ -46,7 +46,6 @@ export class OnePageComponent implements OnInit {
           response => {
             console.log("sended");
             this.contactForm.resetForm();
-            this.showSuccess();
           }
         );
   }
