@@ -1,6 +1,7 @@
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { IndividualConfig, ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-one-page',
@@ -12,6 +13,7 @@ export class OnePageComponent implements OnInit {
   focus: any;
   focus1: any;
   request : MailRequest;
+  options: IndividualConfig;
 
   email:String;
   message:String;
@@ -19,7 +21,12 @@ export class OnePageComponent implements OnInit {
 
   @ViewChild('mailForm', {static: false}) contactForm: NgForm;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient,  private toastr: ToastrService) {
+
+    this.options = this.toastr.toastrConfig;
+    this.options.positionClass = 'toast-top-center';
+    this.options.timeOut = 1500;
+   }
 
   ngOnInit() {}
 
@@ -39,11 +46,18 @@ export class OnePageComponent implements OnInit {
           response => {
             console.log("sended");
             this.contactForm.resetForm();
+            this.showSuccess();
           }
         );
   }
 
+  showSucces(){
+    this.toastr.show('Wiadomość wysłana!', 'Twoja wiadomość została pomyślnie dostarczona do MISEVI', this.options);
+  } 
+
 }
+
+
 export class MailRequest {
 
   constructor(
