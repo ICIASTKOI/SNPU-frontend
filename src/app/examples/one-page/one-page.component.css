@@ -15,23 +15,9 @@
     height: 450px;
 }
 
-.misevi_section{
-    display: flex;
+.red-text{
+    color: red;
 }
-
-.misevi_desc{
-    text-align: center;
-    font-weight: bold;
-    color: ivory;
-    margin: auto;
-    width: 80%;
-    padding: 10px;
-}
-
-.misevi_desc h3{
-    text-align: center;
-}
-
 
 .text_bold{
     font-weight: bold;
@@ -51,10 +37,21 @@
  font-weight: 500;
  color:darkgrey;
 }
-@media (max-width:1300px) { 
 
-    .misevi_section{
-        display: flex;
-        flex-wrap: wrap;
-    }
+.smaller-title{
+    font-size: 35px;
+}
+
+.misevi-href{
+    text-decoration: underline;
+}
+.misevi-href:hover {
+     color: #f5593d;
+     text-decoration: underline;
+ }
+
+.background-logo{
+    background-image: url('/assets/img/one-page/logo_misevi.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
